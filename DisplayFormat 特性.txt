@@ -1,0 +1,21 @@
+
+DisplayFormat特性：
+1.DataFormatString属性=>可以指定格式化字符串，然后让属性值
+按指定的格式显示数据。
+2.ApplyFormatInEditMode属性=>可以将格式化后的数
+据应用于编辑模式，配合DataFormatString属性使用。
+例如：[DisplayFormat(DataFormatString ="{0:C}",
+ApplyFormatInEditMode=true)]表示可以在编辑模式
+中应用 DataFormatString 格式化数据，将 Price 属性的值显示货币
+符号
+3.ConvertEmptyStringToNull属性=>可以
+将模型对象属性值为空字符串(“”)转换为 null 值
+4.HtmlEncode属性=>可以选择是否关闭属
+性值的 HTML 编码
+5.NullDisplayText属性=>可以指定当属性值为
+null 或””时，使用 Html.DisplayFor()辅助方法显示该模型对象属性值
+为指定的文本值
+
+ScaffoldColumn特性：
+用于隐藏显示或编辑模板在页面上渲染的属性，包括 input 和 label 元素都
+会隐藏
